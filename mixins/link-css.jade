@@ -1,0 +1,3 @@
+mixin linkCss(inOptions)
+    each item in inOptions.items
+        link(rel="stylesheet",type="text/css",href="#{item}?t=#{config.timestamp}")

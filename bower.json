@@ -1,0 +1,24 @@
+{
+  "name": "jade-mobile-mixins",
+  "description": "jade mixins based on mobile.",
+  "main": "dist/jade-mobile-mixins.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/jade-mobile-mixins",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

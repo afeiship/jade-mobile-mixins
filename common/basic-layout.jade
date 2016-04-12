@@ -1,0 +1,66 @@
+include ../mixins/variables
+include ../mixins/html-meta
+include ../mixins/link-css
+include ../mixins/link-script
+include ../mixins/link-dns-prefetch
+include ../mixins/link-favicon
+doctype html
+html(lang="en")
+    head
+        <!--update time -#{config.currentTime}-->
+        +metaCharset({charset: 'UTF-8'})
+        +metaViewPort
+        //+metaAppMode
+
+        block title
+            title Title test!
+        block dnsPrefetch
+            +linkDnsPrefetch({
+                items:[
+                        '//m.rkang.cn',
+                        '//img01.rkang.cn',
+                        '//img02.rkang.cn',
+                        '//img03.rkang.cn',
+                        '//img04.rkang.cn',
+                        '//img05.rkang.cn',
+                        '//img06.rkang.cn',
+                        '//img07.rkang.cn',
+                        '//img08.rkang.cn',
+                        '//img09.rkang.cn',
+                        '//img10.rkang.cn'
+                ]
+            })
+
+        block linkFavicon
+            +linkFavicon({
+                favicon:'./img/bitbug_favicon.ico',
+                favicon57:'./img/favicon57.png',
+                favicon72:'./img/favicon72.png',
+                favicon114:'./img/favicon114.png',
+                favicon120:'./img/favicon120.png',
+                favicon144:'./img/favicon144.png'
+            })
+
+        block linkCss
+            +linkCss({
+                items: [
+                    './libs/font-awsome/css/font-awesome.css',
+                    './css/style.css'
+                ]
+            })
+
+        block linkScript
+            +linkScript({
+                items: [
+                    './libs/zepto/zepto.js',
+                    './libs/md5.js',
+                    './libs/fastclick.js',
+                    './libs/LineJS/dist/line.js',
+                    '//api.map.baidu.com/api?v=2.0&ak=27ebf16111739669888a493986d9bca6'
+                ]
+            })
+
+    block htmlBody
+        body(onselectstart="return false")
+            block appScript
+

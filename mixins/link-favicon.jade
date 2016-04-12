@@ -1,0 +1,15 @@
+mixin linkFavicon(inOptions)
+
+    //For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:
+    link(rel="apple-touch-icon-precomposed",sizes="57x57",href="#{inOptions.favicon57}")
+    //For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6:
+    link(rel="apple-touch-icon-precomposed",sizes="72x72",href="#{inOptions.favicon72}")
+    //For iPhone with @2× display running iOS ≤ 6:
+    link(rel="apple-touch-icon-precomposed",sizes="114x114",href="#{inOptions.favicon114}")
+    //For iPhone with @2× display running iOS ≥ 7:
+    link(rel="apple-touch-icon-precomposed",sizes="120x120",href="#{inOptions.favicon120}")
+    //For iPad with @2× display running iOS ≤ 6:
+    link(rel="apple-touch-icon-precomposed",sizes="144x144",href="#{inOptions.favicon144}")
+    //normal favicon
+    link(rel="shortcut icon",href="#{inOptions.favicon}")
+

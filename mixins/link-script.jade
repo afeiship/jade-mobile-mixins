@@ -1,0 +1,3 @@
+mixin linkScript(inOptions)
+    each item in inOptions.items
+        script(type="text/javascript",src="#{item}?timestamp=#{config.timestamp}")

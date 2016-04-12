@@ -1,0 +1,4 @@
+mixin linkDnsPrefetch(inOptions)
+    meta(http-equiv="x-dns-prefetch-control",content="on")
+    each item in inOptions.items
+        link(href="#{item}" rel="dns-prefetch")

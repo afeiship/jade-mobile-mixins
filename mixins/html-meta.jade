@@ -1,0 +1,15 @@
+mixin metaCharset(inOptions)
+    meta(charset="#{inOptions.charset}")
+
+mixin metaViewPort()
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=no")
+
+mixin metaAppMode
+    meta(name="apple-mobile-web-app-capable",content="yes")
+    //UC强制全屏
+    meta(name="full-screen",content="yes")
+    //QQ强制全屏
+    meta(name="x5-fullscreen",content="true")
+    //QQ应用模式
+    meta(name="x5-page-mode",content="app")
+    meta(name="browsermode",content="application")
